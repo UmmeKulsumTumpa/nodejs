@@ -121,7 +121,31 @@ exports.Prisma.TransactionIsolationLevel = makeStrictEnum({
 });
 
 exports.Prisma.UserScalarFieldEnum = {
-  id: 'id',
+  uid: 'uid',
+  name: 'name',
+  age: 'age',
+  email: 'email',
+  role: 'role',
+  userPreferenceId: 'userPreferenceId'
+};
+
+exports.Prisma.UserPreferenceScalarFieldEnum = {
+  upid: 'upid',
+  emailUpdates: 'emailUpdates'
+};
+
+exports.Prisma.PostScalarFieldEnum = {
+  pid: 'pid',
+  title: 'title',
+  averageRating: 'averageRating',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt',
+  authorId: 'authorId',
+  favouritedById: 'favouritedById'
+};
+
+exports.Prisma.CategoryScalarFieldEnum = {
+  cid: 'cid',
   name: 'name'
 };
 
@@ -135,9 +159,21 @@ exports.Prisma.QueryMode = {
   insensitive: 'insensitive'
 };
 
+exports.Prisma.NullsOrder = {
+  first: 'first',
+  last: 'last'
+};
+exports.Role = exports.$Enums.Role = {
+  BASIC: 'BASIC',
+  ADMIN: 'ADMIN',
+  EDITOR: 'EDITOR'
+};
 
 exports.Prisma.ModelName = {
-  User: 'User'
+  User: 'User',
+  UserPreference: 'UserPreference',
+  Post: 'Post',
+  Category: 'Category'
 };
 
 /**
