@@ -1,0 +1,2 @@
+- up applies the migrations
+- down,kinda undo the migrations
